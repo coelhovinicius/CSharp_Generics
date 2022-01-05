@@ -2,18 +2,13 @@
 
 namespace Aula204_Generics
 {
-    // class PrintService
-    class PrintService<T> // Generics
+    class PrintServiceString
     {
-        // private int[] _values = new int[10]; // Vetor privado para armazenar ate 10 numeros inteiros
-        // private object[] _values = new object[10];
-        private T[] _values = new T[10];
+        private string[] _values = new string[10]; // Vetor privado para armazenar ate 10 numeros inteiros
         private int _count = 0; // Variavel privada para fazer a contagem dos numeros inseridos
 
         // Operacoes
-        // public void AddValue(int value)
-        // public void AddValue(object value)
-        public void AddValue(T value)
+        public void AddValue(string value)
         {
             if (_count == 10)
             {
@@ -23,9 +18,7 @@ namespace Aula204_Generics
             _count++;
         }
 
-        // public int First()
-        // public object First()
-        public T First()
+        public string First()
         {
             if (_count == 0)
             {
